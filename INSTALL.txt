@@ -17,8 +17,12 @@ libenet7
   cd zlib-1.2.8/
 
 == Compile:
-Run 'build.sh' or
+Run 'build.sh' 
+or
 cd AC-Lua/lua/ && make linux && cd .. && make linux
+or
+cd ac-lua/lua/ && make linux && cd .. && make linux
+then
 server binary will be in AC-Lua/linux_release/ as linux_64_server
 
 
