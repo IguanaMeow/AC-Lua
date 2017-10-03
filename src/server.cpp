@@ -1526,7 +1526,7 @@ void serverdamage(client *target, client *actor, int damage, int gun, bool gib, 
     if (!m_demo && !m_coop && !validdamage(target, actor, damage, gun, gib)) return;
     if ( m_arena && gun == GUN_GRENADE && arenaroundstartmillis + 2000 > gamemillis && target != actor ) return;
     if ( !fromLua && Lua::callHandler( LUA_ON_PLAYER_GET_DAMAGE, "iiiib", actor->clientnum, target->clientnum, damage, gun, gib ) == Lua::PLUGIN_BLOCK ) return;
-    if ( !((gun == GUN_SNIPER) && gib)) return; // headshot only hit detection
+    if ( !((gun == GUN_SNIPER) && gib)) return;
     clientstate &ts = target->state;
     ts.dodamage(damage, gun);
     if(damage < INT_MAX)
