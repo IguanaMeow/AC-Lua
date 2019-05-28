@@ -13,9 +13,9 @@ LANES_INCLUDES = -Isrc/lua
 
 MACHINE := $(shell uname -m)
 ifeq ($(MACHINE), x86_64)
-	TARGET = $(DSTDIR)/linux_64_server
+	TARGET = $(DSTDIR)/lua_64_server
 else
-	TARGET = $(DSTDIR)/linux_server
+	TARGET = $(DSTDIR)/lua_server
 endif
 
 OBJECTS = $(DSTDIR)/crypto.o \

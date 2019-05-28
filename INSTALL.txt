@@ -1,37 +1,30 @@
 Install Linux
 ==============
 == Dependencies:
-build-essential
-liblua5.1-0-dev
-libluajit-5.1-dev
-liblualib50-dev
-libreadline-dev
-libncurses5-dev
-ncurses-base
-libpthread-stubs0-dev
-libenet7
+Check or run install-dependencies.sh
 
   http://wiki.cubers.net/action/view/Compiling_a_server
-  wget -Ozlib.tar.gz http://zlib.net/zlib-1.2.8.tar.gz
-  tar -zxvf zlib.tar.gz
-  cd zlib-1.2.8/
 
 == Compile:
-Run 'build.sh' 
-or
-cd AC-Lua/lua/ && make linux && cd .. && make linux
-or
-cd ac-lua/lua/ && make linux && cd .. && make linux
-then
-server binary will be in AC-Lua/linux_release/ as linux_64_server
+Run 'build.sh'
+then if there re no errors,
+the server binary will be located in 'bin_unix' as 'lua_64_server' or 'lua_server'
 
 
 
 Install Windows
 ================
 == Dependencies:
-Lua5.1
-???
+MinGW
+GCC
+
+Install CodeBlocks(https://codeblocks.org/) to automatically install both MinGW and GCC
+
+== Setup:
+Then set path to MinGW:
+https://stackoverflow.com/questions/5733220/how-do-i-add-the-mingw-bin-directory-to-my-system-path
+https://www.youtube.com/watch?v=vN2RZfkrqKc
 
 == Compile:
-Run 'build.bat' ?
+Run 'build.bat'
+server binary will be located in 'server_out' as 'ac_server'

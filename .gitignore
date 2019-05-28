@@ -1,8 +1,12 @@
-server_out/
 *.o
 *.lo
 *.la
+*.h~
+*.cpp~
+server_out/
 /enet/.libs/
+/enet/.deps
+/enet/autom4te.cache
 /enet/config.log
 /enet/config.status
 /enet/libtool
@@ -11,7 +15,7 @@ server_out/
 /lua/src/liblua.a
 /lua/src/lua
 /lua/src/luac
+/lanes/src/lua
 /lib/lua51.dll
 /lib/liblua.a
 /linux_release/
-
